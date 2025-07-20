@@ -1,35 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serviço de Ar-Condicionado em Londrina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ar Condicionado em Londrina</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
       margin: 0;
       padding: 0;
+      background-color: #f0f2f5;
     }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #ffffff;
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .whatsapp-btn {
+      margin-top: 15px;
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
       padding: 30px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #0066cc;
-      font-size: 26px;
-      margin-bottom: 10px;
+    .content h2 {
+      color: #004080;
+      font-size: 22px;
     }
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
+    .content ul {
+      padding-left: 20px;
     }
     form {
+      margin-top: 30px;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -38,43 +56,57 @@
       padding: 12px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      font-size: 15px;
+      font-size: 16px;
     }
     button {
-      background-color: #0066cc;
-      color: white;
       padding: 12px;
-      font-size: 16px;
+      background-color: #004080;
+      color: white;
       border: none;
       border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
-    }
-    button:hover {
-      background-color: #004c99;
     }
     footer {
       text-align: center;
+      padding: 20px;
+      color: #555;
       font-size: 14px;
-      margin-top: 30px;
-      color: #777;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Instalação, limpeza e manutenção com profissionais experientes. Atendimento em toda Londrina e região.</h1>
-    <p>Atendimento rápido, com garantia e profissionais certificados em Londrina. Solicite seu orçamento sem compromisso!</p>
 
-    <form action="https://formsubmit.co/gzclimatizacao01@gmail.com" method="POST">
+  <header>
+    <h1>Ar Condicionado em Londrina</h1>
+    <a class="whatsapp-btn" href="https://wa.me/5543999999999" target="_blank">
+      Fale pelo WhatsApp
+    </a>
+  </header>
+
+  <div class="content">
+    <h2>Serviços que Oferecemos:</h2>
+    <ul>
+      <li>Instalação de Ar Condicionado Split</li>
+      <li>Manutenção preventiva e corretiva</li>
+      <li>Limpeza e Higienização</li>
+      <li>Atendimento rápido e com garantia</li>
+    </ul>
+
+    <h2>Solicite um Orçamento</h2>
+    <form action="https://formsubmit.co/SEUEMAIL@EXEMPLO.COM" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="tel" name="telefone" placeholder="Telefone ou WhatsApp" required />
-      <textarea name="mensagem" rows="4" placeholder="Descreva o serviço desejado" required></textarea>
-      <button type="submit">Solicitar Orçamento</button>
+      <textarea name="mensagem" rows="4" placeholder="Descreva seu serviço ou dúvida" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
-
-    <footer>
-      GZ Climatização - Londrina/PR
-    </footer>
   </div>
+
+  <footer>
+    © 2025 Ar Condicionado Londrina - Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
+
