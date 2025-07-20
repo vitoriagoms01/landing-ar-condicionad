@@ -16,21 +16,38 @@
       color: white;
       padding: 30px 20px;
       text-align: center;
+      position: relative;
     }
     header h1 {
       margin: 0;
       font-size: 26px;
     }
-    .whatsapp-btn {
-      margin-top: 15px;
-      display: inline-block;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+    /* Container dos botões sociais no topo */
+    .social-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
+    .social-buttons a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      margin-left: 15px;
+      transition: color 0.3s;
+    }
+    .social-buttons a:hover {
+      color: #25D366; /* verde WhatsApp para todos */
+    }
+    /* Ícones Unicode para WhatsApp e Instagram */
+    .whatsapp-icon::before {
+      content: "\\1F4F2"; /* 📲 emoji de celular */
+      margin-right: 6px;
+    }
+    .instagram-icon::before {
+      content: "\\1F4F7"; /* 📷 emoji de câmera */
+      margin-right: 6px;
+    }
+
     .content {
       max-width: 800px;
       margin: 30px auto;
@@ -80,9 +97,11 @@
 
   <header>
     <h1>Ar Condicionado em Londrina</h1>
-    <a class="whatsapp-btn" href="https://wa.me/5543999999999" target="_blank">
-      Fale pelo WhatsApp
-    </a>
+
+    <div class="social-buttons">
+      <a class="whatsapp-icon" href="https://wa.me/5543999999999" target="_blank" title="WhatsApp"></a>
+      <a class="instagram-icon" href="https://instagram.com/seuusuario" target="_blank" title="Instagram"></a>
+    </div>
   </header>
 
   <div class="content">
