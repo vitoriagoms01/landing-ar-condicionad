@@ -4,55 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GZ Climatização</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
       margin: 0; padding: 0;
-      background: #f7f7f7;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fc;
       color: #222;
-      text-align: center;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
-      background-color: #005baa;
-      padding: 30px 10px;
+      background-color: #0077cc;
       color: white;
+      padding: 2rem 1rem;
+      text-align: center;
     }
-    .logo {
+    header img.logo {
       max-width: 140px;
-      margin-bottom: 15px;
+      margin-bottom: 1rem;
     }
-    h1 {
-      margin: 10px 0 5px;
+    header h1 {
+      margin: 0 0 0.5rem;
       font-weight: 700;
+      font-size: 2rem;
     }
-    p.subtitle {
+    header p.subtitle {
       margin: 0;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
     }
     main {
-      padding: 20px;
+      flex-grow: 1;
       max-width: 480px;
-      margin: 0 auto;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    main p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
     }
     .buttons {
-      margin: 30px 0;
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
     .btn {
-      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
+      font-weight: 700;
       font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
       color: white;
+      text-decoration: none;
       cursor: pointer;
-      display: inline-block;
-      min-width: 130px;
       transition: background-color 0.3s ease;
+      min-width: 140px;
+      justify-content: center;
+    }
+    .btn svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
     }
     .btn-whatsapp {
       background-color: #25d366;
@@ -61,17 +85,46 @@
       background-color: #1ebe5d;
     }
     .btn-instagram {
-      background-color: #e1306c;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     }
     .btn-instagram:hover {
-      background-color: #c1275a;
+      filter: brightness(0.9);
+    }
+    section.about {
+      margin-top: 3rem;
+      text-align: left;
+      background: white;
+      padding: 1.5rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      color: #444;
     }
     footer {
       background-color: #222;
       color: white;
-      padding: 15px 10px;
+      text-align: center;
+      padding: 1rem 1rem;
       font-size: 0.9rem;
-      margin-top: 40px;
+      margin-top: auto;
+    }
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      main {
+        margin: 1rem;
+      }
+      .btn {
+        min-width: 120px;
+        font-size: 0.9rem;
+      }
+      section.about {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -81,21 +134,29 @@
     <h1>GZ Climatização</h1>
     <p class="subtitle">Instalação e manutenção de ar condicionado em Londrina</p>
   </header>
-
   <main>
     <p>Atendimento rápido, preço justo e qualidade garantida para você e sua empresa.</p>
-
     <div class="buttons">
-      <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
-      <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="btn btn-instagram">Instagram</a>
+      <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48a11.93 11.93 0 0 0-17.07 0 11.88 11.88 0 0 0-3.49 8.46c0 2.1.54 4.09 1.57 5.84L2 22l4.32-1.43a11.88 11.88 0 0 0 8.46 3.49h.02a11.9 11.9 0 0 0 8.28-19.58zm-9.25 16.84h-.01a9.49 9.49 0 0 1-4.83-1.33l-.35-.2-2.87.95.96-2.8-.23-.36a9.51 9.51 0 0 1 1.61-11.83 9.44 9.44 0 0 1 6.76-2.89h.01a9.46 9.46 0 0 1 6.7 15.23 9.45 9.45 0 0 1-6.72 2.89zm5.7-7.05c-.31-.16-1.82-.9-2.1-1-.28-.1-.48-.16-.68.16s-.78.9-.96 1.08-.35.24-.65.08a7.42 7.42 0 0 1-2.19-1.35 8.31 8.31 0 0 1-1.53-1.89c-.16-.28-.02-.43.13-.58.14-.14.31-.37.46-.56.16-.19.22-.31.33-.52.11-.21.06-.4-.03-.56-.1-.16-.68-1.63-.93-2.23-.24-.58-.48-.5-.68-.51a3.07 3.07 0 0 0-1.3.1 2.81 2.81 0 0 0-1 1.2 4.53 4.53 0 0 0-.48 1.25 8.49 8.49 0 0 0 1.94 6.43 8.24 8.24 0 0 0 4.58 3.11 6.53 6.53 0 0 0 3.19.3 4.15 4.15 0 0 0 2.43-1.49c.28-.33.77-1.29.77-2.47s-.78-1.53-1.09-1.69z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="btn btn-instagram" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5a4.25 4.25 0 0 0-4.24 4.24v8.52a4.25 4.25 0 0 0 4.24 4.24h8.52a4.25 4.25 0 0 0 4.24-4.24v-8.52a4.25 4.25 0 0 0-4.24-4.24h-8.52zm8.97 2.22a1.12 1.12 0 1 1 0 2.23 1.12 1.12 0 0 1 0-2.23zM12 7.53a4.47 4.47 0 1 1 0 8.94 4.47 4.47 0 0 1 0-8.94zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+        Instagram
+      </a>
     </div>
+    <section class="about">
+      <h2>Sobre Nós</h2>
+      <p>Somos especialistas em climatização, oferecendo serviços de qualidade com foco em conforto e eficiência.</p>
+    </section>
   </main>
-
   <footer>
-    © 2025 GZ Climatização - Todos os direitos reservados.
+    © 2025 GZ Climatização. Todos os direitos reservados.
   </footer>
 </body>
 </html>
+
 
 
 
