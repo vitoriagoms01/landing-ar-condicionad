@@ -2,143 +2,100 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ar Condicionado em Londrina</title>
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GZ Climatização</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f2f5;
-    }
-
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 40px 20px 30px;
+      margin: 0; padding: 0;
+      background: #f7f7f7;
+      color: #222;
       text-align: center;
-      position: relative;
     }
-
-    header img {
-      height: 60px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    .social-buttons {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-
-    .social-buttons a {
-      text-decoration: none;
+    header {
+      background-color: #005baa;
+      padding: 30px 10px;
       color: white;
-      font-size: 22px;
-      margin-left: 15px;
-      transition: color 0.3s ease;
     }
-
-    .social-buttons a:hover {
-      color: #25D366;
+    .logo {
+      max-width: 140px;
+      margin-bottom: 15px;
     }
-
-    .content {
-      max-width: 800px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    h1 {
+      margin: 10px 0 5px;
+      font-weight: 700;
     }
-
-    .content h2 {
-      color: #004080;
-      font-size: 22px;
+    p.subtitle {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
-
-    .content ul {
-      padding-left: 20px;
+    main {
+      padding: 20px;
+      max-width: 480px;
+      margin: 0 auto;
     }
-
-    form {
-      margin-top: 30px;
+    .buttons {
+      margin: 30px 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       gap: 15px;
     }
-
-    input, textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    button {
-      padding: 12px;
-      background-color: #004080;
-      color: white;
+    .btn {
+      padding: 15px 25px;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
       cursor: pointer;
+      display: inline-block;
+      min-width: 130px;
+      transition: background-color 0.3s ease;
     }
-
+    .btn-whatsapp {
+      background-color: #25d366;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+    .btn-instagram {
+      background-color: #e1306c;
+    }
+    .btn-instagram:hover {
+      background-color: #c1275a;
+    }
     footer {
-      text-align: center;
-      padding: 20px;
-      color: #555;
-      font-size: 14px;
+      background-color: #222;
+      color: white;
+      padding: 15px 10px;
+      font-size: 0.9rem;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="social-buttons">
-      <a href="https://wa.me/554396425838" target="_blank" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://instagram.com/gz_clima" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-     <!-- Logo -->
-    <img src="sua-logo.png" alt="Logo da Empresa" />
-    <h1>Ar Condicionado em Londrina</h1>
+    <img src="logo.png" alt="Logo GZ Climatização" class="logo" />
+    <h1>GZ Climatização</h1>
+    <p class="subtitle">Instalação e manutenção de ar condicionado em Londrina</p>
   </header>
 
-  <div class="content">
-    <h2>Serviços que Oferecemos:</h2>
-    <ul>
-      <li>Instalação de Ar Condicionado</li>
-      <li>Manutenção preventiva e corretiva</li>
-      <li>Limpeza e Higienização</li>
-      <li>Atendimento rápido e com garantia</li>
-    </ul>
+  <main>
+    <p>Atendimento rápido, preço justo e qualidade garantida para você e sua empresa.</p>
 
-    <h2>Solicite um Orçamento</h2>
-    <form action="https://formsubmit.co/gzclimatização1@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="tel" name="telefone" placeholder="Telefone" required />
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
+    <div class="buttons">
+      <a href="https://wa.me/SEU_NUMERO" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+      <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="btn btn-instagram">Instagram</a>
+    </div>
+  </main>
 
   <footer>
     © 2025 GZ Climatização - Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
+
 
 
